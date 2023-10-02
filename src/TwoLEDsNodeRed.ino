@@ -1,3 +1,29 @@
+/*
+
+  https://github.com/Isuru2701/esp-http-leds
+
+ A small example showing the use of Node-red as a platform for IoT
+ This project will light up two LEDs connected to the ESP8266
+ This is done by setting up the ESP8266 as a http server which accepts requests from the node-red dashboard
+
+ Components:
+  1. ESP8266
+  2. Two LEDs
+  3. Two resistors (ohms depend on your LEDs)
+  4. Breadboard
+  5. Jumper wires
+  6. Micro-USB cable for connecting the ESP8266 to your computer
+
+  Instructions:
+  1. Connect the ESP8266 to your computer using the micro-USB cable
+  2. Connect the LEDs with the pins D2 and D3 (you can change this l8r in the code)
+  3. Upload this code
+  4. Run node-red on your terminal
+  5. Setup the node-red appropriately according to the instructions. Alternatively import the flow from Flow/flows.json in the project structure.
+
+*/
+
+
 #include <ESP8266WiFi.h>
 #include <ESP8266WebServer.h>
 
