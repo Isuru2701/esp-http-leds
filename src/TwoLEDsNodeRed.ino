@@ -1,13 +1,13 @@
 #include <ESP8266WiFi.h>
 #include <ESP8266WebServer.h>
 
-const char* ssid = "Nokia";
-const char* password = "isuru2701";
+const char* ssid = "SLT_H";
+const char* password = "YahampathH8282";
 
 ESP8266WebServer server(80);
 
-const int ledPin1 = D4; // GPIO 4
-const int ledPin2 = D3; // GPIO 5
+const int ledPin1 = D2; 
+const int ledPin2 = D3; 
 
 bool led1 = false;
 bool led2 = false;
@@ -32,7 +32,7 @@ void handleLED1() {
 }
 
 void handleLED2() {
-    Serial.println("request on led1");
+    Serial.println("request on led2");
   if(led2){
     digitalWrite(ledPin2, LOW);
     server.send(200, "text/plain", "LED2 is OFF");
